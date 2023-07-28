@@ -30,6 +30,9 @@
 # to remove the conatainer
 - docker rm "container_id"
 
+- # to run continous docker container
+- sudo docker update --restart=always <container_id>
+
 # To run the Httpd docker image, if we run without the portno, this will  not work  sine the HTTPD is also running on the port 80
 
 docker run -d -p 80:80 httpd
